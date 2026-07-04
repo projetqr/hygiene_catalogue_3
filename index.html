@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hygiene Product Catalogue</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Animation de fondu pour les éléments du catalogue */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        /* Délai d'animation pour chaque élément */
+        .fade-in:nth-child(1) { animation-delay: 0.1s; }
+        .fade-in:nth-child(2) { animation-delay: 0.2s; }
+        .fade-in:nth-child(3) { animation-delay: 0.3s; }
+        .fade-in:nth-child(4) { animation-delay: 0.4s; }
+        .fade-in:nth-child(5) { animation-delay: 0.5s; }
+        .fade-in:nth-child(6) { animation-delay: 0.6s; }
+        .fade-in:nth-child(7) { animation-delay: 0.7s; }
+        .fade-in:nth-child(8) { animation-delay: 0.8s; }
+        .fade-in:nth-child(9) { animation-delay: 0.9s; }
+        .fade-in:nth-child(10) { animation-delay: 1.0s; }
+        .fade-in:nth-child(11) { animation-delay: 1.1s; }
+        .fade-in:nth-child(12) { animation-delay: 1.2s; }
+        .fade-in:nth-child(13) { animation-delay: 1.3s; }
+        /* Custom styles for brand color */
+        .bg-brand-primary {
+            background-color: #b41f3a;
+        }
+        .hover\:bg-brand-primary:hover {
+            background-color: #b41f3a;
+        }
+        .text-brand-primary {
+            color: #b41f3a;
+        }
+        .bg-brand-gradient {
+            background: linear-gradient(to right, #b41f3a, #e57373);
+        }
+        .button {
+            background-color: #b41f3a;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-weight: 500;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .button:hover {
+            background-color: #99192f;
+            transform: translateY(-2px);
+        }
+
+        .button i {
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-pink-50 font-roboto font-bold">
+    <!-- Header visuel -->
+    <header class="relative bg-cover bg-center h-40" style="background-image: url('https://via.placeholder.com/1200x400?text=Hygiene+Product+Banner');">
+        <div class="absolute inset-0 bg-white bg-opacity-80 flex items-center justify-between px-6">
+            <!-- Logo -->
+            <div class="flex items-center space-x-3">
+                <img src="jnanpalace.png" alt="Logo" class="h-16 w-auto">
+            </div>
+            
+    
+            <!-- Titre principal -->
+            <div class="text-center mx-auto">
+                <h1 class="text-2xl md:text-3xl font-bold text-brand-primary">Hygiene Product Catalogue – FT & FDS</h1>
+                <p class="text-sm md:text-base text-brand-primary mt-1 font-medium">
+                    Accès Rapide aux Documents - Employés
+                </p>
+                  
+            </div>
+        </div>
+    </header>
+    
+    
+    <div class="container mx-auto p-4" id="documentContainer">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+    
+            <a href="FT_et_FDS/FS_FR_Asepclor.pdf" target="_blank" class="button fade-in">
+                <i class="fas fa-file-pdf mr-2"></i>
+                FS Asepclor
+                <i class="fas fa-download ml-2"></i>
+            </a>
+    
+            <a href="FT_et_FDS/FS_FR_VITA ASEPCOL.pdf" target="_blank" class="button fade-in">
+                <i class="fas fa-file-pdf mr-2"></i>
+                FS VITA ASEPCOL
+                <i class="fas fa-download ml-2"></i>
+            </a>
+    
+            <a href="FT_et_FDS/FT_FR_Adisec.pdf" target="_blank" class="button fade-in">
+                <i class="fas fa-file-pdf mr-2"></i>
+                FT Adisec
+                <i class="fas fa-download ml-2"></i>
+            </a>
+    
+            <a href="FT_et_FDS/FT_FR_Asepclor (1).pdf" target="_blank" class="button fade-in">
+                <i class="fas fa-file-pdf mr-2"></i>
+                FT Asepclor
+                <i class="fas fa-download ml-2"></i>
+            </a>
+    
+            <a href="FT_et_FDS/FT_FR_Brustone.pdf" target="_blank" class="button fade-in">
+                <i class="fas fa-file-pdf mr-2"></i>
+                FT Brustone
+                <i class="fas fa-download ml-2"></i>
+            </a>
+    
+            <a href="FT_et_FDS/FT_FR_Clean Plac.pdf" target="_blank" class="button fade-in">
+                <i class="fas fa-file-pdf mr-2"></i>
+                FT Clean Plac
+                <i class="fas fa-download ml-2"></i>
+            </a>
+    
+            <a href="FT_et_FDS/FT_FR_Deobact.pdf" target="_blank" class="button fade-in">
+                <i class="fas fa-file-pdf mr-2"></i>
+                FT Deobact
+                <i class="fas fa-download ml-2"></i>
+            </a>
+    
+            <a href="FT_et_FDS/FT_FR_Halonet.pdf" target="_blank" class="button fade-in">
+                <i class="fas fa-file-pdf mr-2"></i>
+                FT Halonet
+                <i class="fas fa-download ml-2"></i>
+            </a>
+    
+            <a href="FT_et_FDS/FT_FR_Licuasol.pdf" target="_blank" class="button fade-in">
+                <i class="fas fa-file-pdf mr-2"></i>
+                FT Licuasol
+                <i class="fas fa-download ml-2"></i>
+            </a>
+    
+            <a href="FT_et_FDS/FT_FR_MAGIC.pdf" target="_blank" class="button fade-in">
+                <i class="fas fa-file-pdf mr-2"></i>
+                FT MAGIC
+                <i class="fas fa-download ml-2"></i>
+            </a>
+    
+            <a href="FT_et_FDS/FT_FR_Profry.pdf" target="_blank" class="button fade-in">
+                <i class="fas fa-file-pdf mr-2"></i>
+                FT Profry
+                <i class="fas fa-download ml-2"></i>
+            </a>
+    
+            <a href="FT_et_FDS/FT_FR_Supervix.pdf" target="_blank" class="button fade-in">
+                <i class="fas fa-file-pdf mr-2"></i>
+                FT Supervix
+                <i class="fas fa-download ml-2"></i>
+            </a>
+    
+            <a href="FT_et_FDS/FT_FR_VITA_ASEPCOL.pdf" target="_blank" class="button fade-in">
+                <i class="fas fa-file-pdf mr-2"></i>
+                FT VITA ASEPCOL
+                <i class="fas fa-download ml-2"></i>
+            </a>
+    
+            <a href="FT_et_FDS/FT_FR_Vitabac.pdf" target="_blank" class="button fade-in">
+                <i class="fas fa-file-pdf mr-2"></i>
+                FT Vitabac
+                <i class="fas fa-download ml-2"></i>
+            </a>
+    
+            <a href="FT_et_FDS/HOMOLOGATION_ADISEC_2021.pdf" target="_blank" class="button fade-in">
+                <i class="fas fa-certificate mr-2"></i>
+                Homologation Adisec 2021
+                <i class="fas fa-download ml-2"></i>
+            </a>
+    
+            <a href="FT_et_FDS/HOMOLOGATION_ASEPCLOR_06.25.pdf" target="_blank" class="button fade-in">
+                <i class="fas fa-certificate mr-2"></i>
+                Homologation Asepclor 06.25
+                <i class="fas fa-download ml-2"></i>
+            </a>
+    
+            <a href="FT_et_FDS/HOMOLOGATION_CLEAN_PLAC_2021.pdf" target="_blank" class="button fade-in">
+                <i class="fas fa-certificate mr-2"></i>
+                Homologation Clean Plac 2021
+                <i class="fas fa-download ml-2"></i>
+            </a>
+    
+            <a href="FT_et_FDS/HOMOLOGATION_DEOBACT_2024.pdf" target="_blank" class="button fade-in">
+                <i class="fas fa-certificate mr-2"></i>
+                Homologation Deobact 2024
+                <i class="fas fa-download ml-2"></i>
+            </a>
+    
+    
+            <a href="FT_et_FDS/HOMOLOGATION_LICUASOL_2022.pdf" target="_blank" class="button fade-in">
+                <i class="fas fa-certificate mr-2"></i>
+                Homologation Licuasol 2022
+                <i class="fas fa-download ml-2"></i>
+            </a>
+    
+            <a href="FT_et_FDS/HOMOLOGATION_MILAV_N_2025.pdf" target="_blank" class="button fade-in">
+                <i class="fas fa-certificate mr-2"></i>
+                Homologation MILAV N 2025
+                <i class="fas fa-download ml-2"></i>
+            </a>
+    
+    
+            <a href="FT_et_FDS/HOMOLOGATION_SUPERVIX_2021.pdf" target="_blank" class="button fade-in">
+                <i class="fas fa-certificate mr-2"></i>
+                Homologation Supervix 2021
+                <i class="fas fa-download ml-2"></i>
+            </a>
+    
+            <a href="FT_et_FDS/MADEAF_MARRIOTT_FES_JNANE_PALACE_19052026.pdf" target="_blank" class="button fade-in">
+                <i class="fas fa-file-contract mr-2"></i>
+                MADEAF Marriott Fès Jnane Palace (19/05/2026)
+                <i class="fas fa-download ml-2"></i>
+            </a>
+    
+            <a href="FT_et_FDS/MADEAF_MARRIOTT_FES_JNANE_PALACE-19012026.pdf" target="_blank" class="button fade-in">
+                <i class="fas fa-file-contract mr-2"></i>
+                MADEAF Marriott Fès Jnane Palace (19/01/2026)
+                <i class="fas fa-download ml-2"></i>
+            </a>
+    
+            <a href="FT_et_FDS/MILAV_N.pdf" target="_blank" class="button fade-in">
+                <i class="fas fa-file-pdf mr-2"></i>
+                MILAV N
+                <i class="fas fa-download ml-2"></i>
+            </a>
+    
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 text-center py-4 mt-8">
+        <p class="text-xs text-gray-600">Marriott International © 2025 - Accès réservé aux employés</p>
+    </footer>
+    
+</body>
+</html>
